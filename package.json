@@ -9,13 +9,13 @@
     "apps/*"
   ],
   "scripts": {
-    "build": "turbo build",
+    "build": "node init && turbo build",
     "ci": "pnpm lint && pnpm tsc",
     "clean": "turbo clean",
-    "dev": "turbo dev --filter=portal... --filter=ui...",
-    "dev:ui": "turbo dev --filter=storybook... --filter=ui...",
-    "dev:website": "turbo dev --filter=website...",
-    "dev:all": "turbo dev --no-cache --parallel --continue",
+    "dev": "node init && turbo dev --filter=portal... --filter=ui...",
+    "dev:ui": "node init && turbo dev --filter=storybook... --filter=ui...",
+    "dev:website": "node init && turbo dev --filter=website...",
+    "dev:all": "node init && turbo dev --no-cache --parallel --continue",
     "format": "prettier --write \"**/*.{js,jsx,cjs,mjs,ts,tsx,md,mdx}\"",
     "lint": "turbo lint",
     "test": "turbo test",

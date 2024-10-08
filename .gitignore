@@ -7,7 +7,6 @@ node_modules
 dist
 dist-ssr
 *.local
-.env
 .cache
 server/dist
 public/dist
@@ -21,3 +20,4 @@ public/dist
 !.yarn/versions
 
 tsconfig.tsbuildinfo
+config.bat
