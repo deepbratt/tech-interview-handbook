@@ -20,4 +20,4 @@ public/dist
 !.yarn/versions
 
 tsconfig.tsbuildinfo
-config.bat
+.env
